@@ -1,7 +1,6 @@
 {
   "name": "practica-cicd",
   "version": "1.0.0",
-  "description": "Repositorio para practicar GitHub Actions",
   "scripts": {
     "test": "echo '¡Las pruebas pasaron exitosamente! Todo listo para producción.' && exit 0"
   }
