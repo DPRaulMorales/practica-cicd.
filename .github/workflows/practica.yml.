@@ -1,0 +1,23 @@
+name: Mi Primer Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  pruebas:
+    name: Ejecutar pruebas
+    runs-on: ubuntu-latest 
+
+    steps:
+      - name: Descargar el código del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Ejecutar la prueba simulada
+        run: npm test
